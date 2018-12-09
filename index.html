@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html ng-app = "yii2AngApp">
+    <head>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.min.js"></script>
+
+    </head>
+    <body>
+        
+        <div id="main" class="container"> 
+            
+            <div ng-view>
+            </div> 
+        </div>
+     
+        <footer class="text-center">
+            <p>Yii and AngularJs</p>
+        </footer>
+
+        <script src="app.js"></script>
+        <script src="controllers/site.js"></script>
+        <script src="controllers/actor.js"></script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<div>
+    <h1 style="text-align: center">Список актеров</h1>    
+    <div ng-show="actors.length > 0">
+        <table class="table table-striped table-hover">
+            <thead>
+                    <th>photo</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>gender</th>
+            <th>phone</th>
+            <th>age</th>
+            <th>genre</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="data in actors">
+                    <td><img src="{{server_url}}/img/{{data.photo}}" width="40" alt=""></td>
+                    <td>{{data.first_name}}</td>
+                    <td>{{data.last_name}}</td>
+                    <td>{{data.gender}}</td>
+                    <td>{{data.phone}}</td>
+                    <td>{{data.age}}</td>
+                    <td>{{data.genre}}</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div ng-show="actors.length == 0">
+        List of actors is empty
+    </div>
+</div>
